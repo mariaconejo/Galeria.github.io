@@ -3,7 +3,7 @@
     <head>
         <!--Todos los metados-->
         <meta name="description" content="Gallery"/>
-        <meta name="Keywords" content="html, css, js, web2020"/>
+        <meta name="Keywords" content="html, css, scss, js, web2020"/>
         <meta name="author" content="María José & Jeampaul"/>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
@@ -15,52 +15,28 @@
         <div class="gallery">
             <h1>Gallery</h1>
             <!--Contenedor donde se va ver la imagen en grande-->
-            <!--Contendor  con las  8 imagenes  de 600x400 pixeles-->
             <div class="gallery-content">
                 <div id="img-1" class="gallery-content-img">
-                    <img src="img/1-a.jpg" alt="aurora">
-                </div>
-                <div id="img-2" class="gallery-content-img">
-                    <img src="img/3-a.jpg" alt="virus">
-                </div>
-                <div id="img-3" class="gallery-content-img">
-                    <img src="img/5-a.jpg" alt="text">
-                </div>
-                <div id="img-4" class="gallery-content-img">
-                    <img src="img/7-a.jpg" alt="plants">
-                </div>
-                <div id="img-5" class="gallery-content-img">
-                    <img src="img/11-a.jpg" alt="camara">
-                </div>
-                <div id="img-6" class="gallery-content-img">
-                    <img src="img/13-a.jpg" alt="fireworks">
-                </div>
-                <div id="img-7" class="gallery-content-img">
-                    <img src="img/15-a.jpg" alt="paint">
-                </div>
-                <div id="img-8" class="gallery-content-img">
-                    <img src="img/17-a.jpg" alt="prisma">
+                    <img id="bigImage" src="img/1-a.jpg" alt="">
                 </div>
             </div>
-            <!--Contenedor con las 8 minaturas 300x200 pixeles-->
+            <!--Contenedor grande con las 8 imagenes pequeñas-->
             <!--Imagenes descargadas desde https://unsplash.com/--->
             <!--Las imagenes son del mismo tamaño y de vista horizontal-->
-            <div class="wrapper-gallery">
+            <div class="wrapper-gallery clearfix">
                 <div class="gallery-prev clearfix">
                     <ul class="gallery-list">
-                        <li><a href="#img-1" class="gallery-list-img"><img src="img/1.jpg"  alt="aurora"></a></li>
-                        <li><a href="#img-2" class="gallery-list-img"><img src="img/3.jpg"  alt="virus"></a></li>
-                        <li><a href="#img-3" class="gallery-list-img"><img src="img/5.jpg"  alt="text"></a></li>
-                        <li><a href="#img-4" class="gallery-list-img"><img src="img/7.jpg"  alt="plants" ></a></li>
+                        <li class="gallery-list-img"><img class="miniature"  src="img/1-a.jpg"  alt="aurora"></li>
+                        <li class="gallery-list-img"><img class="miniature"  src="img/2-a.jpg"  alt="virus"></li>
+                        <li class="gallery-list-img"><img class="miniature"  src="img/3-a.jpg"  alt="text"></li>
+                        <li class="gallery-list-img"><img class="miniature"  src="img/4-a.jpg"  alt="plants" ></li>
                     </ul>
-                <div class="gallery-prev clearfix">
                     <ul class="gallery-list">
-                        <li><a href="#img-5" class="gallery-list-img"><img src="img/11.jpg" alt="camara"></a</li>
-                        <li><a href="#img-6" class="gallery-list-img"><img src="img/13.jpg" alt="fireworks"></a></li>
-                        <li><a href="#img-7" class="gallery-list-img"><img src="img/15.jpg" alt="paint"></a></li>
-                        <li><a href="#img-8" class="gallery-list-img"><img src="img/17.jpg" alt="prisma"></a></li>
+                        <li class="gallery-list-img"><img  class="miniature"  src="img/5-a.jpg" alt="camara"></li>
+                        <li class="gallery-list-img"><img  class="miniature"  src="img/6-a.jpg" alt="fireworks"></li>
+                        <li class="gallery-list-img"><img  class="miniature"  src="img/7-a.jpg" alt="paint"></li>
+                        <li class="gallery-list-img"><img  class="miniature"  src="img/8-a.jpg" alt="prisma"></li>
                     </ul>
-                </div>
                 </div>
             </div> 
         </div>    
